@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1150" viewBox="0 0 1200 1150" role="img" aria-labelledby="title desc">
+<title id="title">Mythweave architecture</title>
+<desc id="desc">Twitch chat, authenticated companion and labeled demo input pass through identity checks, bounded interpretation, validation, community support and streamer approval. The server revalidates and commits atomically to SQLite, then publishes public state to the control room, overlay and recap. Optional AI only maps ideas to allowed action IDs.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#bfa3ef"/></marker></defs>
+<rect width="1200" height="1150" rx="20" fill="#0b0b17"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<text x="600" y="45" fill="#e8cc8a" font-size="30" font-weight="700">From chat to a changed world</text>
+<text x="600" y="78" fill="#c4b6d7" font-size="18">Every accepted action is checked, approved and persisted.</text>
+
+<path d="M210 195V218H600V242" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M600 195V218H600V242" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M990 195V218H600V242" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M600 325V362" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M600 445V482" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M600 565V602" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M600 685V722" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M600 805V842" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M770 405H827" fill="none" stroke="#bfa3ef" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M995 475V525H773" fill="none" stroke="#bfa3ef" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M430 897H378" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M770 897H827" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M995 949V1000H210V1037" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M995 949V1000H600V1037" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M995 949V1000H990V1037" fill="none" stroke="#bfa3ef" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="110" width="340" height="85" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="210.0" y="140" fill="#eee5f9" font-size="19" font-weight="700">Twitch chat</text>
+<text x="210.0" y="165" fill="#c4b6d7" font-size="16">OAuth identity · EventSub WebSocket</text>
+<rect x="430" y="110" width="340" height="85" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="600.0" y="140" fill="#eee5f9" font-size="19" font-weight="700">Authenticated companion</text>
+<text x="600.0" y="165" fill="#c4b6d7" font-size="16">Twitch identity · participation API</text>
+<rect x="820" y="110" width="340" height="85" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="990.0" y="140" fill="#eee5f9" font-size="19" font-weight="700">Labeled demo simulator</text>
+<text x="990.0" y="165" fill="#c4b6d7" font-size="16">Seeded fictional participants</text>
+<rect x="430" y="245" width="340" height="80" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="600.0" y="275" fill="#eee5f9" font-size="19" font-weight="700">1. Authenticate and deduplicate</text>
+<text x="600.0" y="300" fill="#c4b6d7" font-size="16">Express API · viewer/event checks</text>
+<rect x="430" y="365" width="340" height="80" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="600.0" y="395" fill="#eee5f9" font-size="19" font-weight="700">2. Interpret a supported action</text>
+<text x="600.0" y="420" fill="#c4b6d7" font-size="16">Deterministic authored catalogue</text>
+<rect x="830" y="365" width="330" height="110" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="995.0" y="395" fill="#eee5f9" font-size="19" font-weight="700">Optional OpenAI classifier</text>
+<text x="995.0" y="420" fill="#c4b6d7" font-size="16">Unsupported phrases · opt-in only</text>
+<text x="995.0" y="443" fill="#c4b6d7" font-size="16">Returns an allowed action ID</text>
+<rect x="430" y="485" width="340" height="80" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="600.0" y="515" fill="#eee5f9" font-size="19" font-weight="700">3. Validate the proposal</text>
+<text x="600.0" y="540" fill="#c4b6d7" font-size="16">Role · encounter · Aether · conditions</text>
+<rect x="430" y="605" width="340" height="80" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="600.0" y="635" fill="#eee5f9" font-size="19" font-weight="700">4. Group ideas and collect support</text>
+<text x="600.0" y="660" fill="#c4b6d7" font-size="16">One support per identity · threshold</text>
+<rect x="430" y="725" width="340" height="80" rx="13" fill="#29203d" stroke="#d6b4ff" stroke-width="1.5"/>
+<text x="600.0" y="755" fill="#f0dbad" font-size="19" font-weight="700">5. Streamer approval</text>
+<text x="600.0" y="780" fill="#c4b6d7" font-size="16">Explicit review · approve or reject</text>
+<rect x="430" y="845" width="340" height="104" rx="13" fill="#29203d" stroke="#d6b4ff" stroke-width="1.5"/>
+<text x="600.0" y="875" fill="#f0dbad" font-size="19" font-weight="700">6. Revalidate and commit</text>
+<text x="600.0" y="900" fill="#c4b6d7" font-size="16">Owner · version · readiness · support</text>
+<text x="600.0" y="923" fill="#c4b6d7" font-size="16">Atomic transaction · accepted event</text>
+<rect x="40" y="845" width="335" height="104" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="207.5" y="875" fill="#eee5f9" font-size="19" font-weight="700">SQLite persistence</text>
+<text x="207.5" y="900" fill="#c4b6d7" font-size="16">Checkpoints · accepted decisions</text>
+<text x="207.5" y="923" fill="#c4b6d7" font-size="16">AES-256-GCM Twitch tokens</text>
+<rect x="830" y="845" width="330" height="104" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="995.0" y="875" fill="#eee5f9" font-size="19" font-weight="700">Server-sent events</text>
+<text x="995.0" y="900" fill="#c4b6d7" font-size="16">Authoritative public state</text>
+<text x="995.0" y="923" fill="#c4b6d7" font-size="16">No streamer control rights</text>
+<rect x="40" y="1040" width="340" height="72" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="210.0" y="1070" fill="#eee5f9" font-size="19" font-weight="700">Control room</text>
+<text x="210.0" y="1095" fill="#c4b6d7" font-size="16">Current world and proposals</text>
+<rect x="430" y="1040" width="340" height="72" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="600.0" y="1070" fill="#eee5f9" font-size="19" font-weight="700">Read-only overlay</text>
+<text x="600.0" y="1095" fill="#c4b6d7" font-size="16">Revocable read access</text>
+<rect x="820" y="1040" width="340" height="72" rx="13" fill="#171323" stroke="#635077" stroke-width="1.5"/>
+<text x="990.0" y="1070" fill="#eee5f9" font-size="19" font-weight="700">Attributed recap</text>
+<text x="990.0" y="1095" fill="#c4b6d7" font-size="16">Accepted decisions and consequences</text>
+</g></svg>

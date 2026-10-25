@@ -262,27 +262,9 @@ The default server binds to loopback. A phone on another device cannot reach you
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    Chat[Viewer command in Twitch chat] --> Twitch[Twitch EventSub WebSocket]
-    Twitch --> Server[Express and TypeScript server]
-    Companion[Authenticated companion] --> Server
-    Demo[Labeled demo simulator] --> Server
-    Server --> Intake[Identity checks and event deduplication]
-    Intake --> Catalogue[Deterministic action catalogue]
-    Catalogue -->|unsupported phrase and explicitly enabled| Model[Optional bounded OpenAI classifier]
-    Catalogue --> Rules[Role, resources and encounter validation]
-    Model --> Rules
-    Rules --> Queue[Grouped proposal and community support]
-    Queue --> Streamer[Streamer review and explicit approval]
-    Streamer --> Recheck[Revalidate ownership, version, support and readiness]
-    Recheck --> Commit[Atomic state change and accepted event]
-    Commit --> DB[(SQLite checkpoints and encrypted Twitch tokens)]
-    Commit --> SSE[Server-sent state updates]
-    SSE --> Control[Control room]
-    SSE --> Overlay[Read-only overlay]
-    SSE --> Recap[Attributed recap]
-```
+![Mythweave architecture: authenticated input, bounded interpretation, streamer approval, atomic persistence and live state updates](docs/architecture.svg)
+
+[Editable Mermaid source](docs/architecture.mmd). The diagram is stored as an SVG so it can be viewed without a Mermaid renderer.
 
 ### Why this design
 
