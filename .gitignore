@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.log
+.private-demo/
+demo-delivery.work/
+docs/*.jpg
+!docs/live-victory.jpg
